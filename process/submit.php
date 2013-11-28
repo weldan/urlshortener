@@ -13,11 +13,12 @@ if ($_POST) {
         header("Location: ../submit.php");
         exit;
     }
-		if(strpos($URL, "http://") !== false) {
-			$link = $_POST['link'];
+    
+    if(strpos($URL, "http://") !== false) {
+        $link = $_POST['link'];
     }else {
-			$link = "http://".$_POST['link'];
-		}
+        $link = "http://".$_POST['link'];
+    }
 
     $stmt = $db->prepare("insert into links(code,link) values(:code, :link)");
     $vars = array(
