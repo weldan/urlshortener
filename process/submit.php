@@ -27,7 +27,7 @@ if ($_POST) {
     );
     $stmt->execute($vars);
     
-    echo "<h1>Short link: <a href='http://weldan.kd.io/link/".$code."'>http://weldan.kd.io/link/".$code."</a> </h2>";
+    echo "<h1>Short link: <a href='http://weldan.kd.io/link/".$code."'>http://weldan.kd.io/link/".$code."</a> </h1>";
 
 }
 
